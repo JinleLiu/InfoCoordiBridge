@@ -1,0 +1,187 @@
+{
+  "scene_token": "synthetic_scene",
+  "sample_token": "synthetic_sample",
+  "timestamp_us": 0,
+  "ego_state": {
+    "position_bev_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "velocity_bev_mps": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "yaw_rad": 0.0
+  },
+  "agents": [
+    {
+      "entity_id": "lead_vehicle_track",
+      "category": "van",
+      "class_confidence": 0.5133219761499148,
+      "position_bev_m": [
+        12.20823865636593,
+        0.6054924393548068,
+        0.0
+      ],
+      "velocity_bev_mps": [
+        0.9583811110123126,
+        -0.04161886512854216,
+        0.0
+      ],
+      "yaw_rad": 0.029234787726217792,
+      "size_m": [
+        4.844999991570449,
+        2.014999996494211,
+        1.8299999968160827
+      ],
+      "covariance": [
+        [
+          0.00023595392506060855,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00023595392506060855,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.02385914523339214,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.02385914523339214
+        ]
+      ],
+      "uncertainty_scalar": 0.0481901983169055,
+      "ambiguity_flags": [],
+      "provenance": {
+        "source_modalities": [
+          "bevfusion",
+          "lidar"
+        ],
+        "conflict_resolved": {
+          "class": [
+            "car",
+            "van"
+          ],
+          "geometry": [
+            [
+              12.2,
+              0.6
+            ],
+            [
+              12.5,
+              0.8
+            ]
+          ]
+        },
+        "single_source_retained": false,
+        "camera_semantic_attached": false
+      },
+      "fusion_lineage": [
+        "lidar:LIDAR_TOP:lidar_lead",
+        "bevfusion:BEVFusion:bev_lead"
+      ],
+      "source_observation_ids": [
+        "lidar_lead",
+        "bev_lead"
+      ],
+      "semantic_attributes": {
+        "relative_position_to_ego": "front",
+        "motion_state": "moving",
+        "zone": "normal_lane"
+      },
+      "motion_state": "moving"
+    },
+    {
+      "entity_id": "ped_track_03",
+      "category": "pedestrian",
+      "class_confidence": 1.0,
+      "position_bev_m": [
+        18.499999926911755,
+        3.9999999841971356,
+        0.0
+      ],
+      "velocity_bev_mps": [
+        0.1999999640868733,
+        0.0,
+        0.0
+      ],
+      "yaw_rad": 0.0,
+      "size_m": [
+        0.6999999809946207,
+        0.6999999809946207,
+        1.6999999538440789
+      ],
+      "covariance": [
+        [
+          0.0039507160337745595,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0039507160337745595,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.17956563354100974,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.17956563354100974
+        ]
+      ],
+      "uncertainty_scalar": 0.3670326991495686,
+      "ambiguity_flags": [],
+      "provenance": {
+        "source_modalities": [
+          "lidar"
+        ],
+        "conflict_resolved": {},
+        "single_source_retained": true,
+        "camera_semantic_attached": false
+      },
+      "fusion_lineage": [
+        "lidar:LIDAR_TOP:ped_single"
+      ],
+      "source_observation_ids": [
+        "ped_single"
+      ],
+      "semantic_attributes": {
+        "relative_position_to_ego": "front_left",
+        "motion_state": "stationary",
+        "zone": "normal_lane"
+      },
+      "motion_state": "stationary"
+    }
+  ],
+  "map_context": {
+    "location": "synthetic_city",
+    "closest_lane_token": null,
+    "nearby_lanes": [],
+    "ped_crossings": [],
+    "stop_lines": [],
+    "drivable_areas": []
+  },
+  "metadata": {
+    "source": "synthetic_demo"
+  }
+}
