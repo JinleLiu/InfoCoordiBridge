@@ -219,9 +219,3 @@ ica_module/
 
 ---
 
-## Suggested next step
-
-If you want to connect this directly to your real second-paper pipeline, the next practical step is:
-1. replace the pseudo nuScenes builder with your real detector outputs,
-2. preserve the same `Observation` schema,
-3. export `SceneSummary.to_coordiworld_dict()` as the direct input to Paper 3.
